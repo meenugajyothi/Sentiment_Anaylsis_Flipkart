@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Reply</h1>
+    <div class="result-box">
+        {% if prediction == 'positive' %}
+        <h3>Thanks for give a {{prediction}} review &#x1F60A;! This will make us more effecively!</h3>
+        {% else %}
+        <h3>We are sorry to hear this from you &#x1F622;. We will work on your problem!</h3>
+        {% endif %}
+    </div>
+</body>
+</html>

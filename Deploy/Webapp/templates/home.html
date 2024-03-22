@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis On Yonex Reviews</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center-align the content */
+    background-color: #15ecd3; /* Set background color */
+    margin: 0;
+    padding: 0;
+    background-image: url("https://entrackr.com/storage/2020/07/Flipkart.jpg"); /* Replace "background_image_url_here.jpg" with the actual URL of your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #000000; /* Change heading color to black */
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin: 20px auto; /* Center the textarea */
+    display: block;
+    border-radius: 5px; /* Add border radius */
+    border: 2px solid #db2bc0; /* Add border with pink color */
+    padding: 10px; /* Add padding */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border radius */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+}
+
+.result {
+    margin-top: 20px; /* Add margin to the result section */
+}
+
+.result h1 {
+    color: #000000; /* Change result heading color to black */
+}
+
+.result p {
+    color: #000000; /* Change result text color to black */
+}
+</style>
+</head>
+
+<body>
+    <h1>Welcome to Sentiment Analyzer of Reviews</h1>
+    <form action="/prediction" method="post">
+        <label for="text">Enter your Review:</label>
+        <input type="text" name="input_text" placeholder="Type here...."><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
